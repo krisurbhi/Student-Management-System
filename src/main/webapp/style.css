@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+	padding:0;
+	margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    padding: 0px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0px 0px 10px black;
+
+}
+.header button{
+    padding:10px 30px;
+    font-size: 15px;
+    border: 2px solid silver;
+    outline: none;
+    background: royalblue;
+    color: white;
+    border-radius: 5px;
+    transition: all ease-in 0.4s;
+}
+.header button:hover{
+    cursor: pointer;
+    border: 2px solid blue; 
+}
+.add-student{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 420px;
+    height: 400px;
+    background: white;
+    box-shadow: 0px 0px 10px blue;
+    border-radius: 8px;
+    display:none;
+    transition: all ease-in 0.4s;
+}
+.add-student .title{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right, darkcyan,blueviolet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.add-student form{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.add-student form input{
+    width: 40%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid silver;
+    outline:none;
+    font-size:18px;
+}
+.add-student form input:focus{
+    border: 2px solid blue;
+}
+.add-student form textarea{
+    width: 82%;
+    padding: 12px;;
+    border-radius: 5px;
+    border: 2px solid silver;
+    outline:none;
+    font-size:18px;
+}
+.add-student form textarea:focus{
+    border: 2px solid blue;
+}
+.add-student form input[type="submit"]{
+    width: 82%;
+    padding: 12px;  
+}
+@keyframes anim1{
+	from{
+		opacity:0.4;
+		transform:rotateY(320deg);
+	}
+	to{
+		opacity:1;
+	}
+}
+.tabel-panel{
+	width:70%;
+	margin:40px auto;
+	padding:5px;
+	background:white;
+	border-radius:5px;
+}
+.tabel-panel table{
+	padding:5px;
+	width:100%;
+	height:100%;
+	border:2px solid blueviolet;
+	border-collapse:collapse;
+}
+.tabel-panel table th,
+.tabel-panel table tr,
+.tabel-panel table td{
+	padding:8px;
+	text-align:center;
+	border:2px solid blueviolet;
+}
+.tabel-panel table thead{
+	background:blueviolet;
+}
+.tabel-panel table tbody{
+	background:white;
+}
+
